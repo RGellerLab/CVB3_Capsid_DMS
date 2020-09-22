@@ -1,0 +1,24 @@
+{
+    "id": "900E83E9",
+    "path": "C:/Users/gelro/Dropbox/LAB/data/dms_on_server/github/codon_files/scripts/pipeline_samples.R",
+    "project_path": "pipeline_samples.R",
+    "type": "r_source",
+    "hash": "3825175643",
+    "contents": "",
+    "dirty": false,
+    "created": 1600353378889.0,
+    "source_on_save": false,
+    "relative_order": 1,
+    "properties": {
+        "cursorPosition": "26,0",
+        "scrollLine": "5"
+    },
+    "folds": "",
+    "lastKnownWriteTime": 1600354331,
+    "encoding": "UTF-8",
+    "collab_server": "",
+    "source_window": "",
+    "last_content_update": 1600354331163,
+    "read_only": false,
+    "read_only_alternatives": []
+}

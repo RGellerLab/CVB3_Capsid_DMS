@@ -1,0 +1,84 @@
+2020-05-26 18:02:49,177 - INFO - Beginning execution of phydms in directory /sternadi/home/volume3/omer
+
+2020-05-26 18:02:49,177 - INFO - Progress is being logged to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_log.log
+
+2020-05-26 18:02:49,177 - INFO - Version information:
+	Time and date: Tue May 26 18:02:47 2020
+	Platform: Linux-3.10.0-514.10.2.el7.x86_64-x86_64-with-centos-7.3.1611-Core
+	Python version: 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:01:00)  [GCC 7.3.0]
+	phydms version: 2.3.8
+	Bio version: 1.76
+	cython version: 0.29.15
+	numpy version: 1.17.0
+	scipy version: 1.2.1
+	matplotlib version: 3.1.1
+	natsort version: 7.0.0
+	sympy version: 1.5.1
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.0
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-05-26 18:02:49,177 - INFO - Parsed the following arguments:
+	alignment = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+	tree = /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+	model = YNGKP_M0
+	outprefix = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0
+	brlen = scale
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = False
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 1
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2020-05-26 18:02:49,177 - INFO - Random number seed: 1
+
+2020-05-26 18:02:49,177 - INFO - Reading alignment from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+2020-05-26 18:02:49,981 - INFO - Read 51 aligned sequences from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta, each consisting of 851 codons.
+
+2020-05-26 18:02:49,982 - INFO - Codon substitution model with be M0 version of YNGKP (Yang, Nielsen, Goldman, & Pederson. Genetics. 155:431-449).
+2020-05-26 18:02:50,014 - INFO - Reading tree from /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+2020-05-26 18:02:50,016 - INFO - Tree has 51 tips.
+2020-05-26 18:02:50,026 - INFO - Adjusted 8 branch lengths up to minbrlen 1e-06
+
+2020-05-26 18:02:50,026 - INFO - Initializing TreeLikelihood..
+2020-05-26 18:02:54,434 - INFO - TreeLikelihood initialized.
+2020-05-26 18:02:54,434 - INFO - Maximizing log likelihood (initially -20873.56).
+2020-05-26 18:02:54,434 - INFO - Branch lengths will be scaled but not optimized individually.
+2020-05-26 18:05:25,745 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -20873.56 to -16761.14 (22 iterations, 34 function evals)
+2020-05-26 18:05:25,745 - INFO - Optimized log likelihood is -16761.14.
+2020-05-26 18:05:25,746 - INFO - Writing log likelihood to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_loglikelihood.txt
+2020-05-26 18:05:25,747 - INFO - Model parameters after optimization:
+	kappa = 7.14112
+	omega = 0.0182954
+	phi0A = 0.293862
+	phi0C = 0.173893
+	phi0G = 0.283923
+	phi1A = 0.313556
+	phi1C = 0.267183
+	phi1G = 0.177319
+	phi2A = 0.283223
+	phi2C = 0.238782
+	phi2G = 0.250482
+2020-05-26 18:05:25,747 - INFO - Writing model parameters to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_modelparams.txt
+2020-05-26 18:05:25,748 - INFO - Writing the optimized tree to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_tree.newick
+
+2020-05-26 18:05:25,750 - INFO - Successful completion of phydms

@@ -1,0 +1,11 @@
+,single,double,triple
+plasmid,0,846,715
+RT+PCR,0,513,118
+mut lib 1,0,603792,542011
+mut lib 2,0,729740,654502
+mut lib 3,0,451239,398220
+wt virus 1,0,4196,185
+wt virus 2,0,6696,403
+mut virus 1,0,129929,118338
+mut virus 2,0,124371,112137
+mut virus 3,0,74567,62569

@@ -1,0 +1,91 @@
+2020-05-26 18:02:54,251 - INFO - Beginning execution of phydms in directory /sternadi/home/volume3/omer
+
+2020-05-26 18:02:54,251 - INFO - Progress is being logged to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_log.log
+
+2020-05-26 18:02:54,251 - INFO - Version information:
+	Time and date: Tue May 26 18:02:51 2020
+	Platform: Linux-3.10.0-514.10.2.el7.x86_64-x86_64-with-centos-7.3.1611-Core
+	Python version: 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:01:00)  [GCC 7.3.0]
+	phydms version: 2.3.8
+	Bio version: 1.76
+	cython version: 0.29.15
+	numpy version: 1.17.0
+	scipy version: 1.2.1
+	matplotlib version: 3.1.1
+	natsort version: 7.0.0
+	sympy version: 1.5.1
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.0
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-05-26 18:02:54,251 - INFO - Parsed the following arguments:
+	alignment = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+	tree = /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+	model = ('ExpCM', '/sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv')
+	outprefix = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs
+	brlen = scale
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = True
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = True
+	divpressure = None
+	ncpus = 11
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2020-05-26 18:02:54,251 - INFO - Random number seed: 1
+
+2020-05-26 18:02:54,251 - INFO - Reading alignment from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+2020-05-26 18:02:55,055 - INFO - Read 51 aligned sequences from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta, each consisting of 851 codons.
+
+2020-05-26 18:02:55,056 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv
+2020-05-26 18:02:55,056 - INFO - Preferences will be averaged across sites.
+2020-05-26 18:02:56,413 - INFO - Successfully read site-specific amino-acid preferences for all 851 sites.
+
+2020-05-26 18:02:56,416 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.287, C = 0.240, G = 0.240, T = 0.234
+
+2020-05-26 18:02:58,270 - INFO - Reading tree from /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+2020-05-26 18:02:58,273 - INFO - Tree has 51 tips.
+2020-05-26 18:02:58,283 - INFO - Adjusted 8 branch lengths up to minbrlen 1e-06
+
+2020-05-26 18:02:58,283 - INFO - Initializing TreeLikelihood..
+2020-05-26 18:03:41,728 - INFO - TreeLikelihood initialized.
+2020-05-26 18:03:41,728 - INFO - Maximizing log likelihood (initially -20869.62).
+2020-05-26 18:03:41,728 - INFO - Branch lengths will be scaled but not optimized individually.
+2020-05-26 18:23:36,638 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -20869.62 to -16732.38 (20 iterations, 33 function evals)
+2020-05-26 18:23:36,639 - INFO - Optimized log likelihood is -16732.38.
+2020-05-26 18:23:36,639 - INFO - Writing log likelihood to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_loglikelihood.txt
+2020-05-26 18:23:36,679 - INFO - Model parameters after optimization:
+	beta = 0.610358
+	kappa = 7.55197
+	omega = 0.0183291
+	phiA = 0.306471
+	phiC = 0.221725
+	phiG = 0.240318
+2020-05-26 18:23:36,679 - INFO - Writing model parameters to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_modelparams.txt
+2020-05-26 18:23:36,680 - INFO - Writing the optimized tree to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_tree.newick
+
+2020-05-26 18:23:36,684 - INFO - 
+Fitting differential preferences for each site to detect differential selection.
+2020-05-26 18:23:36,684 - INFO - For the fitting, using ExpCM_fitprefs2 implementation as specified by fitprefsmethod = 2
+2020-05-26 18:23:36,684 - INFO - Fitting with 11 CPUs...
+2020-05-26 18:36:28,352 - INFO - Completed fitting site-specific differential preferences.
+2020-05-26 18:36:28,375 - INFO - Writing results to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_diffprefsbysite.txt
+
+2020-05-26 18:36:28,585 - INFO - Successful completion of phydms

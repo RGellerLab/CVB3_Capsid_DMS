@@ -1,0 +1,81 @@
+2020-05-26 18:02:45,916 - INFO - Beginning execution of phydms_comprehensive in directory /sternadi/home/volume3/omer
+
+2020-05-26 18:02:45,916 - INFO - Progress is being logged to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out.log
+
+2020-05-26 18:02:45,916 - INFO - Version information:
+	Time and date: Tue May 26 18:02:43 2020
+	Platform: Linux-3.10.0-514.10.2.el7.x86_64-x86_64-with-centos-7.3.1611-Core
+	Python version: 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:01:00)  [GCC 7.3.0]
+	phydms version: 2.3.8
+	Bio version: 1.76
+	cython version: 0.29.15
+	numpy version: 1.17.0
+	scipy version: 1.2.1
+	matplotlib version: 3.1.1
+	natsort version: 7.0.0
+	sympy version: 1.5.1
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.0
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-05-26 18:02:45,917 - INFO - Parsed the following command-line arguments:
+	outprefix = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_
+	alignment = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+	prefsfiles = ['/sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv']
+	raxml = None
+	tree = /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+	ncpus = -1
+	brlen = scale
+	omegabysite = False
+	diffprefsbysite = True
+	gammaomega = False
+	gammabeta = False
+	noavgprefs = False
+	randprefs = False
+
+2020-05-26 18:02:45,917 - INFO - Checking that the alignment /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta is valid...
+2020-05-26 18:02:46,702 - INFO - Valid alignment specifying 51 sequences of length 2553.
+
+2020-05-26 18:02:46,702 - INFO - Reading tree from /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+2020-05-26 18:02:46,705 - INFO - Starting analysis to optimize tree in /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt using model YNGKP_M0. The command is: phydms /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt YNGKP_M0 /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0 --brlen scale --ncpus 1
+
+2020-05-26 18:02:46,706 - INFO - Starting analysis to optimize tree in /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt using model YNGKP_M5. The command is: phydms /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt YNGKP_M5 /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M5 --brlen scale --ncpus 1
+
+2020-05-26 18:02:46,706 - INFO - Starting analysis to optimize tree in /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt using model ExpCM_p1_mean_prefs. The command is: phydms /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt ExpCM_/sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs --brlen scale --diffprefsbysite --ncpus 11
+
+2020-05-26 18:02:46,706 - INFO - Starting analysis to optimize tree in /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt using model averaged_ExpCM_p1_mean_prefs. The command is: phydms /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt ExpCM_/sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs --brlen scale --diffprefsbysite --avgprefs --ncpus 11
+
+2020-05-26 18:05:26,897 - INFO - Analysis completed for YNGKP_M0
+2020-05-26 18:05:26,898 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_log.log
+2020-05-26 18:05:26,898 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_tree.newick
+2020-05-26 18:05:26,898 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_loglikelihood.txt
+2020-05-26 18:05:26,899 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M0_modelparams.txt
+2020-05-26 18:05:26,899 - INFO - Analysis successful for YNGKP_M0
+
+2020-05-26 18:10:01,201 - INFO - Analysis completed for YNGKP_M5
+2020-05-26 18:10:01,202 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M5_log.log
+2020-05-26 18:10:01,202 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M5_tree.newick
+2020-05-26 18:10:01,202 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M5_loglikelihood.txt
+2020-05-26 18:10:01,202 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_YNGKP_M5_modelparams.txt
+2020-05-26 18:10:01,202 - INFO - Analysis successful for YNGKP_M5
+
+2020-05-26 18:36:29,848 - INFO - Analysis completed for averaged_ExpCM_p1_mean_prefs
+2020-05-26 18:36:29,849 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_log.log
+2020-05-26 18:36:29,850 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_tree.newick
+2020-05-26 18:36:29,850 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_loglikelihood.txt
+2020-05-26 18:36:29,850 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_modelparams.txt
+2020-05-26 18:36:29,851 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_averaged_ExpCM_p1_mean_prefs_diffprefsbysite.txt
+2020-05-26 18:36:29,851 - INFO - Analysis successful for averaged_ExpCM_p1_mean_prefs
+
+2020-05-26 18:38:30,972 - INFO - Analysis completed for ExpCM_p1_mean_prefs
+2020-05-26 18:38:30,975 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_log.log
+2020-05-26 18:38:30,976 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_tree.newick
+2020-05-26 18:38:30,978 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_loglikelihood.txt
+2020-05-26 18:38:30,978 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_modelparams.txt
+2020-05-26 18:38:30,979 - INFO - Found expected output file /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_diffprefsbysite.txt
+2020-05-26 18:38:30,979 - INFO - Analysis successful for ExpCM_p1_mean_prefs
+
+2020-05-26 18:38:31,993 - INFO - Successful completion of phydms_comprehensive

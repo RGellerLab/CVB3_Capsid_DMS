@@ -1,0 +1,6 @@
+This folder contains the data required to obtain the codon files for each condition
+
+1. virvarseq folder: Has the output of the virvarseq script with the counts of each codon read
+2. Scripts folder: This folder has an R project file and the scripts used to obtain the codon files from the VirVarSeq output. This can be run to obtain both the codon tables and the codon tables that have the single mutations within codons removed (same as filter_single_mutants_codon_tables folder). 
+3. filter_single_mutants_codon_tables folder: Has the codon tables for all samples 
+NGS statistics folder: This folder has the statistics associated with the codon tables with all single codon mutations removed or not. 

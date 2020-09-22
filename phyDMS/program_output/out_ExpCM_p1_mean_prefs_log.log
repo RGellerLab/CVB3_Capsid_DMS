@@ -1,0 +1,110 @@
+2020-05-26 18:02:52,487 - INFO - Beginning execution of phydms in directory /sternadi/home/volume3/omer
+
+2020-05-26 18:02:52,487 - INFO - Progress is being logged to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_log.log
+
+2020-05-26 18:02:52,487 - INFO - Version information:
+	Time and date: Tue May 26 18:02:50 2020
+	Platform: Linux-3.10.0-514.10.2.el7.x86_64-x86_64-with-centos-7.3.1611-Core
+	Python version: 3.7.3 | packaged by conda-forge | (default, Mar 27 2019, 23:01:00)  [GCC 7.3.0]
+	phydms version: 2.3.8
+	Bio version: 1.76
+	cython version: 0.29.15
+	numpy version: 1.17.0
+	scipy version: 1.2.1
+	matplotlib version: 3.1.1
+	natsort version: 7.0.0
+	sympy version: 1.5.1
+	six version: 1.14.0
+	pandas version: 1.0.3
+	pyvolve version: 1.0.0
+	statsmodels version: 0.11.1
+	weblogolib version: 3.5.0
+	PyPDF2 version: 1.26.0
+
+2020-05-26 18:02:52,487 - INFO - Parsed the following arguments:
+	alignment = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+	tree = /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+	model = ('ExpCM', '/sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv')
+	outprefix = /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs
+	brlen = scale
+	gammaomega = False
+	gammabeta = False
+	omegabysite = False
+	omegabysite_fixsyn = False
+	diffprefsbysite = True
+	diffprefsprior = ('invquadratic', 150.0, 0.5)
+	fitphi = False
+	randprefs = False
+	avgprefs = False
+	divpressure = None
+	ncpus = 11
+	fitprefsmethod = 2
+	ncats = 4
+	minbrlen = 1e-06
+	minpref = 0.002
+	seed = 1
+	initparams = None
+	profile = False
+	opt_details = False
+	nograd = False
+
+2020-05-26 18:02:52,487 - INFO - Random number seed: 1
+
+2020-05-26 18:02:52,487 - INFO - Reading alignment from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta
+2020-05-26 18:02:53,269 - INFO - Read 51 aligned sequences from /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/cvb3_p1.fa.phy.fasta, each consisting of 851 codons.
+
+2020-05-26 18:02:53,270 - INFO - The model will be an ExpCM informed by site-specific amino-acid preferences in /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/p1_mean_prefs.csv
+2020-05-26 18:02:54,715 - INFO - Successfully read site-specific amino-acid preferences for all 851 sites.
+
+2020-05-26 18:02:54,717 - INFO - Nucleotide frequency parameters phi will be set so stationary state matches alignment nucleotide frequencies of A = 0.287, C = 0.240, G = 0.240, T = 0.234
+
+2020-05-26 18:02:56,539 - INFO - Reading tree from /sternadi/home/volume3/omer/CVB3_RG/cvb3_p1.fa.phy_phyml_tree.txt
+2020-05-26 18:02:56,542 - INFO - Tree has 51 tips.
+2020-05-26 18:02:56,552 - INFO - Adjusted 8 branch lengths up to minbrlen 1e-06
+
+2020-05-26 18:02:56,553 - INFO - Initializing TreeLikelihood..
+2020-05-26 18:03:41,476 - INFO - TreeLikelihood initialized.
+2020-05-26 18:03:41,477 - INFO - Maximizing log likelihood (initially -18186.65).
+2020-05-26 18:03:41,477 - INFO - Branch lengths will be scaled but not optimized individually.
+2020-05-26 18:18:32,824 - INFO - Maximization complete:
+	Step 1: optimized parameters, loglik went from -18186.65 to -14580.51 (16 iterations, 24 function evals)
+2020-05-26 18:18:32,824 - INFO - Optimized log likelihood is -14580.51.
+2020-05-26 18:18:32,824 - INFO - Writing log likelihood to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_loglikelihood.txt
+2020-05-26 18:18:32,848 - INFO - Model parameters after optimization:
+	beta = 2.18066
+	kappa = 7.4668
+	omega = 0.156256
+	phiA = 0.34099
+	phiC = 0.212543
+	phiG = 0.24148
+2020-05-26 18:18:32,848 - INFO - Writing model parameters to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_modelparams.txt
+2020-05-26 18:18:32,849 - INFO - Writing the optimized tree to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_tree.newick
+
+2020-05-26 18:18:32,852 - INFO - 
+Fitting differential preferences for each site to detect differential selection.
+2020-05-26 18:18:32,852 - INFO - For the fitting, using ExpCM_fitprefs2 implementation as specified by fitprefsmethod = 2
+2020-05-26 18:18:32,852 - INFO - Fitting with 11 CPUs...
+2020-05-26 18:24:31,526 - WARNING - /powerapps/share/python-anaconda-2019.10/lib/python3.7/site-packages/phydmslib/treelikelihood.py:438: UserWarning: Optimizer reports convergence, but max element in Jacobian is 1756.4208354369039
+Summary of optimization:
+['Step 1: optimized parameters, loglik went from -94.80 to -77.86 (29 iterations, 43 function evals)']
+  jacmax, summary))
+
+2020-05-26 18:27:53,753 - WARNING - /powerapps/share/python-anaconda-2019.10/lib/python3.7/site-packages/phydmslib/treelikelihood.py:452: UserWarning: Optimization failure 1
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -30.67 to -30.24 (2 iterations, 43 function evals)
+
+Re-trying with different initial params.
+  "Re-trying with different initial params.")
+
+2020-05-26 18:28:16,868 - WARNING - /powerapps/share/python-anaconda-2019.10/bin/phydms:82: UserWarning: Optimization failed with primary model; trying secondary model.
+Error message:
+Optimization failure 2
+b'ABNORMAL_TERMINATION_IN_LNSRCH'
+Step 1: optimized parameters, loglik went from -30.67 to -30.24 (2 iterations, 43 function evals)
+Step 1: optimized parameters, loglik went from -30.67 to -30.81 (7 iterations, 111 function evals)
+  "Error message:\n{0}".format(str(err)))
+
+2020-05-26 18:38:30,005 - INFO - Completed fitting site-specific differential preferences.
+2020-05-26 18:38:30,006 - INFO - Writing results to /sternadi/home/volume3/omer/CVB3_RG/p1_mean_prefs/out/out_ExpCM_p1_mean_prefs_diffprefsbysite.txt
+
+2020-05-26 18:38:30,016 - INFO - Successful completion of phydms

@@ -1,0 +1,1 @@
+PDB files used for FoldX analysis. These are derived from the 4GB3 PDB file, but are mutated to match the Nancy infectious clone used in the study. Structures have been repaired 5 or 10 times (pentamer or monomer). Subunits have been renamed to individual letters. 

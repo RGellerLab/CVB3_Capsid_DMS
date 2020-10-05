@@ -1,0 +1,5 @@
+Alignments used in entropy calculation. 
+Downloaded from https://www.viprbrc.org/ removing duplicates and taking full genomes
+1. entB_full_aa_CDS.fa: downloaded on 2/15/19. Used for calculating Enterovirus B entropy
+2. CVB_AA.fa: downloaded 10-28-19. Used for calculating CVB entropy
+3. CVB3_AA.fa: downloaded 10-28-19. Used for calculating CVB3 entropy
